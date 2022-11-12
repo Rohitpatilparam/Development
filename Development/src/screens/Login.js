@@ -6,7 +6,7 @@ import { TouchableOpacity } from "react-native";
 const Login =({navigation})=>{
 
     const submit =()=>{
-        navigation.navigate("Home")
+        navigation.navigate("Social")
     };
 
     return(
