@@ -6,6 +6,11 @@ import SamLogin from "./screens/SamLogin";
 import SamMemories from "./screens/SamMemories";
 import SamPreview from "./screens/SamPreview";
 import SamPost from "./screens/SamPost";
+import SBEventPost from "./screens/SBEventPost";
+import Home from "./screens/Home";
+import Login from "./screens/Login";
+import SBTakeEvent from "./screens/SBTakeEvent";
+import SBShowEvent from "./screens/SBShowEvent"
 //import Home from "./screens/Home";
 //import Login from "./screens/Login";
 import SujaSocialPost from "./screens/SujaSocialPost";
@@ -25,6 +30,9 @@ const Navigator=()=>{
                 <Stack.Screen name="SujaSocial" component={SujaSocialPost}/>
                 <Stack.Screen name="SujaPreview" component={SujaPreviewPage}/>
                 <Stack.Screen name="SujaPost" component={SujaPost}/>
+                <Stack.Screen name="SBEventPost" component={SBEventPost}/>
+                <Stack.Screen name="SBTakeEvent" component={SBTakeEvent}/>
+                <Stack.Screen name="SBShowEvent" component={SBShowEvent}/>
             </Stack.Navigator>
         </NavigationContainer>
     );
