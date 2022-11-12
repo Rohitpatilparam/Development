@@ -6,6 +6,11 @@ import SamLogin from "./screens/SamLogin";
 import SamMemories from "./screens/SamMemories";
 import SamPreview from "./screens/SamPreview";
 import SamPost from "./screens/SamPost";
+//import Home from "./screens/Home";
+//import Login from "./screens/Login";
+import SujaSocialPost from "./screens/SujaSocialPost";
+import SujaPreviewPage from "./screens/SujaPreviewPage";
+import SujaPost from "./screens/SujaPost";
 
 const Navigator=()=>{
     const Stack = createNativeStackNavigator();
@@ -17,6 +22,9 @@ const Navigator=()=>{
                 <Stack.Screen name="SamMemories" component={SamMemories} />
                 <Stack.Screen name="SamPreview" component={SamPreview} />
                 <Stack.Screen name="SamPost" component={SamPost} />
+                <Stack.Screen name="SujaSocial" component={SujaSocialPost}/>
+                <Stack.Screen name="SujaPreview" component={SujaPreviewPage}/>
+                <Stack.Screen name="SujaPost" component={SujaPost}/>
             </Stack.Navigator>
         </NavigationContainer>
     );
