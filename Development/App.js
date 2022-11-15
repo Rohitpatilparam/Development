@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
+import { QueryClientProvider,QueryClient } from 'react-query';
 import { StyleSheet, Text, View } from 'react-native';
 import Navigator from './src/Navigator';
-import { QueryClient, QueryClientProvider } from 'react-query';
 
 export default function App() {
 
@@ -13,4 +13,5 @@ export default function App() {
     </QueryClientProvider>
   );
 }
+
 
