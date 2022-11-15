@@ -137,8 +137,7 @@ function SBEventPost(props) {
         style={{height:60,width:325,borderWidth:1,borderColor:'#D4D5D9',borderRadius:4}}
         placeholder="  Address"
         onChangeText={handleChange('address')}
-         
-           value={values.address}
+        value={values.address}
            id="address"
            name="address"
         

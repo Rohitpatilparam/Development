@@ -1,37 +1,36 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
-<<<<<<< HEAD
 import SBEventPost from "./screens/SBEventPost";
 import Home from "./screens/Home";
 import Login from "./screens/Login";
 import SBTakeEvent from "./screens/SBTakeEvent";
 import SBShowEvent from "./screens/SBShowEvent"
-=======
-//import Home from "./screens/Home";
-//import Login from "./screens/Login";
 import SujaSocialPost from "./screens/SujaSocialPost";
 import SujaPreviewPage from "./screens/SujaPreviewPage";
 import SujaPost from "./screens/SujaPost";
->>>>>>> f2884b508cc3733bfaf3a76643c133faa10cab33
+import SBCrePro from "./screens/SBCrePro";
+import SBAddClg from "./screens/SBAddClg";
+import SBAddBatch from "./screens/SBAddBatch";
+import SBShowStudent from "./screens/SBShowStudent";
 
 const Navigator=()=>{
     const Stack = createNativeStackNavigator();
     return(
         <NavigationContainer>
-<<<<<<< HEAD
-            <Stack.Navigator initialRouteName="SBEventPost"> 
+            <Stack.Navigator initialRouteName="SBCrePro"> 
                 
                 <Stack.Screen name="SBEventPost" component={SBEventPost}/>
                 <Stack.Screen name="SBTakeEvent" component={SBTakeEvent}/>
                 <Stack.Screen name="SBShowEvent" component={SBShowEvent}/>
-
-=======
-            <Stack.Navigator initialRouteName="SujaSocial"> 
                 <Stack.Screen name="SujaSocial" component={SujaSocialPost}/>
                 <Stack.Screen name="SujaPreview" component={SujaPreviewPage}/>
                 <Stack.Screen name="SujaPost" component={SujaPost}/>
->>>>>>> f2884b508cc3733bfaf3a76643c133faa10cab33
+                <Stack.Screen name="SBCrePro" component={SBCrePro}/>
+                <Stack.Screen name="SBAddClg" component={SBAddClg}/>
+                <Stack.Screen name="SBAddBatch" component={SBAddBatch}/>
+                <Stack.Screen name="SBShowStudent" component={SBShowStudent}/>
+
                 </Stack.Navigator>
         </NavigationContainer>
     );
