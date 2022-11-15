@@ -3,7 +3,7 @@ import { View, Text } from "react-native";
 import { TouchableOpacity } from "react-native";
 
 
-const Login =({navigation})=>{
+const SamLogin =({navigation})=>{
 
     const submit =()=>{
         navigation.navigate("Social")
@@ -16,4 +16,4 @@ const Login =({navigation})=>{
     );
 }
 
-export default Login;
+export default SamLogin;
