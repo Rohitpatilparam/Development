@@ -16,12 +16,22 @@ import SBShowEvent from "./screens/SBShowEvent"
 import SujaSocialPost from "./screens/SujaSocialPost";
 import SujaPreviewPage from "./screens/SujaPreviewPage";
 import SujaPost from "./screens/SujaPost";
+import SamCreateProfile from "./screens/SamCreateProfile";
+import SamCreateSchool from "./screens/SamCreateSchool";
+import SamNewBatch from "./screens/SamNewBatch";
+import SamInfoPage from "./screens/SamInfoPage";
 
 const Navigator=()=>{
     const Stack = createNativeStackNavigator();
     return(
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="SamMemories"> 
+            <Stack.Navigator initialRouteName="SamCreateProfile"> 
+                <Stack.Screen name="Login" component={Login}/>
+                <Stack.Screen name="Home" component={Home}/>
+                <Stack.Screen name="SamCreateProfile" component={SamCreateProfile}/>
+                <Stack.Screen name="SamCreateSchool" component={SamCreateSchool}/>
+                <Stack.Screen name="SamNewBatch" component={SamNewBatch}/>
+                <Stack.Screen name="SamInfoPage" component={SamInfoPage}/>
                 <Stack.Screen name="SamLogin" component={SamLogin} />
                 <Stack.Screen name="SamHome" component={SamHome} />
                 <Stack.Screen name="SamMemories" component={SamMemories} />
